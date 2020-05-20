@@ -1,8 +1,8 @@
 
-# 2
+# readMe_Generator
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-  3
+  Creates a readMe using the command line
  ## Table of Contents
   *[Installation](#installation)
   *[Usage](#usage)
@@ -13,18 +13,18 @@
   
 ## Installation
 To install necessary dependencies, run the following command:
-    4
+    npm i
 ## Usage
-5
+It requires use of the command line
 ## License
-This project is licensed under the 5 license.
+This project is licensed under the It requires use of the command line license.
 ## Contributing
-4
+Email me for more information
 ## Tests
 To run tests, run the following command:
-    5
+    npm test
 ## Questions
-<img src="https://avatars2.githubusercontent.com/u/1825798?v=4" alt="avatar" style="border-radius: 16px" width="30"/>
+<img src="https://avatars2.githubusercontent.com/u/61363728?v=4" alt="avatar" style="border-radius: 16px" width="30"/>
 If you have any questions about the repo, open an issue or contact@
-[1]https://github.com/1
+[blakeford1]https://github.com/blakeford1
   
