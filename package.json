@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blakeford1/_readme_generator.git"
+    "url": "git+https://github.com/blakeford1/readme_generator.git"
   },
   "author": "Blake Ford",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/blakeford1/_readme_generator/issues"
+    "url": "https://github.com/blakeford1/readme_generator/issues"
   },
-  "homepage": "https://github.com/blakeford1/_readme_generator#readme",
+  "homepage": "https://github.com/blakeford1/readme_generator#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "inquirer": "^7.1.0"
