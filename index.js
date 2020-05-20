@@ -69,7 +69,7 @@ ${data.description}
 *[License](#license)
  *[Contributing](#contributing)
  *[Tests](#tests)
-*[Questions](#questions)
+ *[Questions](#questions)
   
 ## Installation
 To install necessary dependencies, run the following command:
