@@ -21,5 +21,7 @@
     "inquirer": "^7.1.0"
   },
   "devDependencies": {},
-  "keywords": []
+  "scripts": {
+    "test": "test"
+  }
 }
