@@ -3,11 +3,6 @@ var fs = require("fs");
 
 inquirer
   .prompt([
-    // {
-    //   type: "input",
-    //   message: badge badge badge badge,
-    //   name: "username"
-    // },
     {
       type: "Projet Title",
       message: "Project Title?",
@@ -72,7 +67,7 @@ inquirer
       License - ${answers.license}
       Contributing - ${answers.contributing}
       Tests - ${answers.tests}
-      Question - ${answers.question}
+      Question1 - ${answers.question1}
     `;
 
     fs.writeFile("readMe.md", readMeText, function (err) {
