@@ -77,9 +77,8 @@ To install necessary dependencies, run the following command:
 ${data.installation}
 
 ## Usage
-```
 ${data.usage}
-```
+
 ## License
 This project is licensed under the ${data.usage} license.
 
