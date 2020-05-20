@@ -1,25 +1,25 @@
 
-# readMe_generator
-(![AppVeyor](https://img.shields.io/appveyor/build/blakeford1/readme_generator))
+# readme_generator
+![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-Generates a readMe from the command line
+Creates a readMe using the command line
 ## Table of Contents
 *[Installation](#installation)
 *[Usage](#usage)
 *[License](#license)
  *[Contributing](#contributing)
  *[Tests](#tests)
-*[Questions](#questions)
+ *[Questions](#questions)
   
 ## Installation
 To install necessary dependencies, run the following command:
 npm i
 ## Usage
-You have to use the command line
+It is run from the command line
 ## License
-This project is licensed under the You have to use the command line license.
+This project is licensed under the It is run from the command line license.
 ## Contributing
-email me for info
+email me for information
 ## Tests
 To run tests, run the following command:
 npm test
