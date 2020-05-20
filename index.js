@@ -2,10 +2,16 @@ const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 const util = require("util");
+
 const writeFileAsync = util.promisify(fs.writeFile);
 
-function readMeQuestions() {
+function repoQuestions() {
   return inquirer.prompt([
+    {
+      type: "input",
+      name: "username",
+      message: "What is your Github Username?",
+    },
     {
       type: "input",
       name: "title",
@@ -42,66 +48,56 @@ function readMeQuestions() {
       message:
         "What does the user need to know about contributing to the repo?",
     },
-    {
-      type: "input",
-      name: "username",
-      message: "What is your Github Username?",
-    },
   ]);
 }
 
-var user = (answers) => {
-  var queryUrl = `https://api.github.com/users/${answers.username}`;
+var getName = (data) => {
+  var queryUrl = `https://api.github.com/users/${data.username}`;
   return axios.get(queryUrl);
 };
 
-const readMeText = (answers, image, email) => {
-  console.log(answers);
+const generateMarkdown = (data, image, email) => {
+  console.log(data);
   return `
- 
-  # ${answers.title}
-  ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
-  ## Description
-    ${answers.description}
-   ## Table of Contents
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[License](#license)
-    *[Contributing](#contributing)
-    *[Tests](#tests)
-    *[Questions](#questions)
-    
-  ## Installation
-  To install necessary dependencies, run the following command:
-      ${answers.installation}
-  ## Usage
-  ${answers.usage}
-  ## License
-  This project is licensed under the ${answers.usage} license.
-  ## Contributing
-  ${answers.contributing}
-  ## Tests
-  To run tests, run the following command:
-      ${answers.tests}
-  ## Questions
-  <img src="${image}" alt="avatar" style="border-radius: 16px" width="30"/>
-  If you have any questions about the repo, open an issue or contact@
-  [${answers.username}]${email}
-    `;
+# ${data.title}
+![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+## Description
+  ${data.description}
+ ## Table of Contents
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[License](#license)
+  *[Contributing](#contributing)
+  *[Tests](#tests)
+  *[Questions](#questions)
+  
+## Installation
+To install necessary dependencies, run the following command:
+    ${data.installation}
+## Usage
+${data.usage}
+## License
+This project is licensed under the ${data.usage} license.
+## Contributing
+${data.contributing}
+## Tests
+To run tests, run the following command:
+    ${data.tests}
+## Questions
+<img src="${image}" alt="avatar" style="border-radius: 16px" width="30"/>
+If you have any questions about the repo, open an issue or contact@
+[${data.username}]${email}
+  `;
 };
 
 async function init() {
   console.log("Generating README");
   try {
-    const answers = await readMeQuestions();
+    const data = await repoQuestions();
 
-    const res = await user(answers);
+    const res = await getName(data);
 
-    const md = readMeText(
-      answers,
-      res.answers.avatar_url,
-      res.answers.html_url
-    );
+    const md = generateMarkdown(data, res.data.avatar_url, res.data.html_url);
 
     await writeFileAsync("README.md", md);
 
