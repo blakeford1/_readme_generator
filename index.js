@@ -60,7 +60,7 @@ const readMeTxt = (data, image, email) => {
   console.log(data);
   return `
 # ${data.title}
-(![AppVeyor](https://img.shields.io/appveyor/build/blakeford1/readme_generator))
+![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
 ${data.description}
 ## Table of Contents
