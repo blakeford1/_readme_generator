@@ -10,7 +10,7 @@ inquirer
     // },
     {
       type: "Projet Title",
-      message: "What is the name of your Project?",
+      message: "Project Title?",
       name: "title",
     },
     {
@@ -30,7 +30,7 @@ inquirer
     },
     {
       type: "Usage",
-      message: "usage?",
+      message: "Usage?",
       name: "usage",
     },
     {
@@ -48,6 +48,16 @@ inquirer
       message: "Tests?",
       name: "tests",
     },
+    {
+      type: "Question",
+      message: "User GitHub profile picture?",
+      name: "question1",
+    },
+    {
+      type: "Question",
+      message: "User GitHub email?",
+      name: "question2",
+    },
   ])
 
   .then(function (answers) {
@@ -62,15 +72,10 @@ inquirer
       License - ${answers.license}
       Contributing - ${answers.contributing}
       Tests - ${answers.tests}
+      Question - ${answers.question}
     `;
 
     fs.writeFile("readMe.md", readMeText, function (err) {
       console.log("err ??", err);
     });
-    // if (response.confirm === response.password) {
-    //   console.log("Success!");
-    // }
-    // else {
-    //   console.log("You forgot your password already?!");
-    // }
   });
