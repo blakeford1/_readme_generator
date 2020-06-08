@@ -1,30 +1,36 @@
 
-# readme_generator
-![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+# I'm a 
+![GitHub repo size](https://img.shields.io/github/repo-size/blakeford1/readme_generator)
 ## Description
-Creates a readMe using the command line
+readme generator
+
 ## Table of Contents
-*[Installation](#installation)
-*[Usage](#usage)
-*[License](#license)
- *[Contributing](#contributing)
- *[Tests](#tests)
- *[Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
   
 ## Installation
 To install necessary dependencies, run the following command:
-npm i
+is
+
 ## Usage
-It is run from the command line
+words words
+
 ## License
-This project is licensed under the It is run from the command line license.
+This project is licensed under the words words license.
+
 ## Contributing
-email me for information
+more words
+
 ## Tests
 To run tests, run the following command:
-npm test
+awesome
+
 ## Questions
-<img src="https://avatars2.githubusercontent.com/u/61363728?v=4" alt="avatar" style="border-radius: 18px" width="35"/>
+<img src="https://avatars0.githubusercontent.com/u/1836624?v=4" alt="avatar" style="border-radius: 18px" width="35"/>
 If you have any questions about the repo, open an issue or contact@
-[blakeford1]https://github.com/blakeford1
-  
+[hello]https://github.com/hello
+  [!ReadMe Generator Demo](doc/screenshot_youtube.PNG)](https://youtu.be/DB1zM7-VHns"Put hover text here!")
