@@ -18,7 +18,7 @@ is
 
 ## Usage
 words words
-
+[![ReadMe Generator](https://img.youtube.com/vi/VIDEO-ID/0.jpg)](https://youtu.be/DB1zM7-VHns)
 ## License
 This project is licensed under the words words license.
 
@@ -31,6 +31,4 @@ awesome
 
 ## Questions
 <img src="https://avatars0.githubusercontent.com/u/1836624?v=4" alt="avatar" style="border-radius: 18px" width="35"/>
-If you have any questions about the repo, open an issue or contact@
-[hello]https://github.com/hello
-  [!ReadMe Generator Demo](doc/screenshot_youtube.PNG)](https://youtu.be/DB1zM7-VHns"Put hover text here!")
+If you have any questions about the repo, open an issue or contact@https://github.com/blakeford1
